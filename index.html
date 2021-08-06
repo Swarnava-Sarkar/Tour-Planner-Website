@@ -1,88 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
 
-	<link rel="stylesheet" href="style.css">
-	<title>Tour Planner | Website</title>
-</head>
-<body>
-	<header class="header">
+    <link rel="stylesheet" href="style.css" />
+    <title>Tour Planner | Website</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <a href="index.html"><img src="./image/logo.png" alt="Logo" /></a>
+        <div class="nav-links" id="navlinks">
+          <i class="fa fa-times" onclick="hide()"></i>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Plans</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Contact Us</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="show()"></i>
+      </nav>
 
-		<nav>
-			<a href="index.html"><img src="./image/logo.png" alt="Logo"></a>
-			<div class="nav-links" id="navlinks">
-				<i class="fa fa-times" onclick="hide()"></i>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="">About</a></li>
-					<li><a href="">Plans</a></li>
-					<li><a href="">Blog</a></li>
-					<li><a href="">Contact Us</a></li>
-				</ul>
-			</div>
-			<i class="fa fa-bars" onclick="show()"></i>			
-		</nav>
+      <div class="text">
+        <h1>Plan Your Holiday With Us</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, quae?
+          Quasi recusandae officiis laudantium alias mollitite de dictas impedit
+          beatae saepe fuga enim quis esses
+        </p>
+        <a href="" class="pc btn">Get in touch with us</a>
+      </div>
+      <div class="book">
+        <a href="" class="book-btn btn">Get in touch with us</a>
+      </div>
+    </header>
+    <!-- -----------------offering-------------- -->
+    <section class="offering">
+      <h1>What You Get</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
+        accusamus.
+      </p>
 
-		<div class="text">
-			<h1>Plan Your Holiday With Us</h1>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, quae? Quasi recusandae officiis laudantium alias mollitite de dictas impedit beatae saepe fuga enim quis esses</p>
-			<a href="" class="btn">Get in touch with us</a>
-		</div>
+      <div class="row">
+        <div class="offering-col">
+          <h3>Extensive Tour Packages</h3>
+          <p>
+            Pick up from a long list of packages, exclusively handcrafted to
+            suit your aspirations and budget. deserunt dolores voluptatem
+            tempora, cupiditate numquam, corporis mollitia sed error blanditiis
+            possimus debitis veniam alias.
+          </p>
+        </div>
+        <div class="offering-col">
+          <h3>Easy Booking</h3>
+          <p>
+            We handle Tour packages, Car Rental, Hotel Booking. Just name a
+            place, and we make package for you, confirmed! psa ab eligendi,
+            deserunt dolores voluptatem tempora, cupiditate numquam, corporis
+            mollitia sed error blanditiis possimus debitis veniam alias.
+          </p>
+        </div>
+        <div class="offering-col">
+          <h3>Customer Experience</h3>
+          <p>
+            We have a record of delivering utmost satisfaction! Count on us for
+            offering services that are totally worth your investment negendi,
+            deserunt dolores voluptatem tempora, cupiditate numquam, corporis
+            mollitia sed error blanditiis possimus .
+          </p>
+        </div>
+      </div>
+    </section>
 
-	</header>
-	<!-- -----------------offering-------------- -->
-	<section class="offering">
-		<h1>What You Get</h1>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, accusamus.</p>
+    <!-- ----------------menu hiding------------ -->
+    <script>
+      var nav = document.getElementById("navlinks");
 
-		<div class="row">
-			<div class="offering-col">
-				<h3>Extensive Tour Packages</h3>
-				<p>Pick up from a long list of packages, exclusively handcrafted to suit your aspirations and budget. deserunt dolores voluptatem tempora, cupiditate numquam, corporis mollitia sed error blanditiis possimus debitis veniam alias.</p>
-			</div>
-			<div class="offering-col">
-				<h3>Easy Booking</h3>
-				<p>We handle Tour packages, Car Rental, Hotel Booking. Just name a place, and we make package for you, confirmed! psa ab eligendi, deserunt dolores voluptatem tempora, cupiditate numquam, corporis mollitia sed error blanditiis possimus debitis veniam alias.</p>
-			</div>
-			<div class="offering-col">
-				<h3>Customer Experience</h3>
-				<p>We have a record of delivering utmost satisfaction! Count on us for offering services that are totally worth your investment negendi, deserunt dolores voluptatem tempora, cupiditate numquam, corporis mollitia sed error blanditiis possimus .</p>
-			</div>
-			
-		</div>
-	</section>
+      function show() {
+        nav.style.right = "0";
+      }
 
-
-
-
-
-
-
-
-
-
-	<!-- ----------------menu hiding------------ -->
-	<script>
-		var nav = document.getElementById("navlinks");
-
-		function show()
-		{
-			nav.style.right = "0";
-		}
-
-		function hide()
-		{
-			nav.style.right = "-200px";
-		}
-
-	</script>
-</body>
+      function hide() {
+        nav.style.right = "-200px";
+      }
+    </script>
+  </body>
 </html>
